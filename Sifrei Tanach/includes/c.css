@@ -1,0 +1,105 @@
+body {font-family:"Shlomo LB","Ezra SIL SR","EzraSILSRW","Ezra SIL","Keter YG","Keter Aram Tsova","Taamey David CLM","Taamey Frank CLM","SBL Hebrew",code2000,Cardo,"Guttman Vilna-Normal",Galaxie,"Frank Ruehl CLM","Arial Unicode MS";color:#000000;background-color:#FFFFFF;margin:1.5em;}
+
+h1 .ivr {font-size:200%;text-align:right;}
+h2 .ivr {font-size:170%;text-align:right;}
+h3 .ivr {font-size:130%;text-align:right;}
+big {font-size:120%;vertical-align:-7%;}
+
+small {font-size:80%;vertical-align:10%;font-weight:bold}
+sup {font-size:115%;vertical-align:15%;}
+
+/* use Ezra SIL SR - Regular in .woff format */
+@font-face {
+  font-family: EzraSILSRW;
+  src: url(SILEOTSR.woff);
+}
+
+.chapverse {
+	font-size:70%;vertical-align:9%;font-weight:bold;
+	word-break:keep-all;
+}
+.sefernm {text-align:center;font-size:130%;}
+.colhdr {text-align:center;font-size:150%;}
+
+.sefer {width:80%; margin-left:10%; margin-right:10%;
+	/*text-align:justify; text-justify:inter-word;line-height:3.2;}*/
+	text-align:justify; text-justify:inter-word;
+	line-height:3.5;}
+.sefer2 {
+	text-align:justify; text-justify:inter-word;
+	line-height:3.5;}
+
+.shira {
+	text-align:center;
+}
+
+#section1 {overflow:hidden;height:37%}
+#section2 {overflow:scroll;height:43%}
+
+#elyontachton {border-spacing:20px;}
+#elyontachton td {width:50%; vertical-align:top;}
+/*#elyontachton td {width:50%;vertical-align:top;padding:10px;}*/
+
+.lvl_1,.col_1 {
+	/* need "!important" to convince browsers to include
+		background color in Print mode*/
+	/*background-color:khaki !important;*/
+	background-color:#FDF399 !important;
+	border:solid orange 2px;
+}
+.lvl_1 {
+	/*margin:1px;padding:9px;padding-right:8px;*/
+	margin:1px;padding:12px;padding-right:8px;
+}
+}
+
+.first { /* first top-level section of verse */
+	border-right:none;
+	/* no right border so as to be next to chapter(verse) */
+}
+	
+.lvl_2,.col_2 {
+	/*background-color:sandybrown !important;*/
+	background-color:#FFBE7A !important;
+	/*background-color:#FFD793 !important;*/
+	border:solid brown 2px;
+}
+.lvl_2 {
+	/*margin:1px;padding:6px;*/
+	margin:1px;padding:8px;
+}
+.lvl_3,.col_3 {
+	/*background-color:palegreen !important;*/
+	background-color:#AAFFAA !important;
+	/*background-color:#CCFFC3 !important;*/
+	border:solid green 2px;
+}
+.lvl_3 {
+	/*margin:1px;padding:3px;padding-right:6px;*/
+	margin:1px;padding:4px;padding-right:6px;
+}
+.lvl_4,.col_4 {
+	background-color:lightblue !important;
+	/*background-color:#C7F2FF !important;*/
+	border:solid blue 2px;
+}
+.lvl_4 {
+	margin:1px;padding-right:3px;
+}
+	
+#intro,#acknowledge {direction:ltr;font-size:120%;}
+#bsd { text-align:right; }
+#taamlegend {
+	line-height:400%;font-size:100%;text-align:center;
+	border:1px solid black; border-collapse:collapse;
+}
+#taamlegend th {border:solid black; border-width:1px 1px 5px 1px; padding:10px;}
+#taamlegend td {border:1px solid black; padding:10px;}
+.taamim {font-size:250%;text-align:center;vertical-align:center;}
+#mesharsim td {border:solid black;border-width:5px 1px 1px 1px; padding:10px;}
+
+
+@media print {
+    .sefernm2 {page-break-before: always;}
+	h2.intro {page-break-before: always;}
+}
